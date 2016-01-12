@@ -7,31 +7,10 @@ twitter.com/gsvineeth
 <html lang="en">
 <head>
     <!-- jQuery from CDN -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="js/jribbble.js"></script>
-      <script src="js/bootstrap.js"></script>
-<script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jribbble.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-$(document).ready(function()
-    //Paste your Client Access Token in the line below within quotes - you can build your API from https://dribbble.com/account/applications 
-    $.jribbble.setToken('31ab7fc9c25cbe4122efa08d82d5ee0998685a63cd93f0fd763045abb4bbd67d');
-    $.jribbble.users('mikeypawell').shots({per_page: 36}).then(function(shots) {
-    var html = [];
-  
-    shots.forEach(function(shot) {
-        html.push('<div class="col-sm-6 col-md-4 col-lg-4"> <div class="grid-list">');
-        html.push('<a href="' + shot.html_url + '" target="_blank">');
-        html.push('<img class="img-responsive" src="' + shot.images.normal + '" alt="' + shot.title + '"><\/a>');
-        html.push('<div class="overlay"><a target="_blank"  href="' + shot.html_url + '">');
-        html.push('<h2>' + shot.title + '<\/h2>');
-        html.push('<\/a> <\/div><\/div><\/div>');
-    });
-  
-    $('#shots').html(html.join(''));
-    });
-});
- 
-        </script>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -49,18 +28,18 @@ $(document).ready(function()
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-</head>
+      <![endif]-->
 
-<body>
+  </head>
+
+  <body>
     <div class="wrapper">
         <div class="container">
             <header>
                 <div class="row">
                     <div class="navbar">
                         <div class="navbar-header">
-                            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Mikey Pawell</a>
+                            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">Mikey Pawell</a>
                         </div>
 
                         <div class="collapse navbar-collapse">
@@ -83,24 +62,79 @@ $(document).ready(function()
                             </ul>
 
                             <ul class="nav navbar-nav social">
-                                     
-                                      <li><a href="https://twitter.com/mikey_pawell"> <i class="fa fa-twitter"></i> </a></li>
-                                      <li><a href="https://github.com/mikeypawell/"> <i class="fa fa-github"></i> </a> </li>  
-                                      <li><a href="https://www.linkedin.com/mikeypawell"> <i class="fa fa-linkedin"></i> </a></li>
-                                      <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
-                            </ul>
-                        </div><!-- /.nav-collapse -->
-                    </div><!-- /.navbar -->
-                </div>
 
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <h1 class="intro"><span>Hello</span> <span>I’m</span> Mikey Pawell <span>, Designer &amp; Coder </span>
-                    
+                              <li><a href="https://twitter.com/mikey_pawell"> <i class="fa fa-twitter"></i> </a></li>
+                              <li><a href="https://github.com/mikeypawell/"> <i class="fa fa-github"></i> </a> </li>  
+                              <li><a href="https://www.linkedin.com/mikeypawell"> <i class="fa fa-linkedin"></i> </a></li>
+                              <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                          </ul>
+                      </div><!-- /.nav-collapse -->
+                  </div><!-- /.navbar -->
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h1 class="intro">
+
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">  
+                            <h1 class="page-title">About Me</h1>
+                            <div class="col-md-12 col-lg-12 resume">
+                                <h5 class="about-description">
+
+                                Prior to my life as a web developer, I studied Environmental Science and Technology Management at University of California Santa Barbara.  In my last year of school I was exposed to entrepreneurship, and the power of technology.  But, I found it difficult to express and implement my ideas without technical skills.  In search of an outlet, I discovered coding and found myself at General Assembly; a full time, 12-week full stack web development bootcamp resulting in a work-ready skillset.
+
+                                <br>
+                                <br> 
+                                After graduating from General Assembly I decided to focus on front-end development. I am currently looking for full time work and improving my skills in Javascript, jQuery, CSS, HTML, AngularJS and UI/UX design.
+                                <br>
+                                <br> 
+                                Feel free to send me a <a href="contact.html"><strong> message</strong></a>. I look forward to talking to you!
+
+                                </h1>
+
+                                    <div class="row about-skills">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                                            <h4 class="resume-sub-category">Languages</h4>
+                                            <h5 class="skills-technology">HTML5, CSS3, Javascript, Ruby
+                                            </h5>
+
+                                            <h4 class="resume-sub-category">Frameworks</h4>
+                                            <h5 class="skills-technology">Node.js, Express, Rails, AngularJS
+                                            </h5> 
+                                    
+                                            <h4 class="resume-sub-category">Database Tools</h4>
+                                            <h5 class="skills-technology">MongoDB, Mongoose.js, PostgreSQL, ActiveRecord
+                                            </h5>
+                                         </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                                            <h4 class="resume-sub-category">Libraries </h4>
+                                            <h5 class="skills-technology">JQuery, Bootstrap
+                                            </h5> 
+
+                                            <h4 class="resume-sub-category">Design</h4>
+                                            <h5 class="skills-technology">Adobe Illustrator, Photoshop
+                                            </h5> 
+                                            <h4 class="resume-sub-category">Other</h4>
+                                            <h5 class="skills-technology">Google Analytics, Adwords 
+                                            </h5> 
+                                            <br>
+
+                                        </div>
+                                            
+                                       
+                                    </div>
+
+                                </h5>
+
+                            </div>
 
 
                         </h1>
-                    
+
 
                     </div>
                 </div>
@@ -109,45 +143,44 @@ $(document).ready(function()
             <div class="row grid-list-wrapper no-gutter-space" id="shots"></div>
 
 
-         </div>
-    </div>
-
-        
-
-    </div>
-
-    <footer>
-        <div class="container">
-            <nav class="nav-footer">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Resume</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-
-                                  <ul>
-                                      <li><a href="https://twitter.com/mikey_pawell"> <i class="fa fa-twitter"></i> </a></li>
-                                      <li><a href="https://github.com/mikeypawell/"> <i class="fa fa-github"></i> </a> </li>  
-                                      <li><a href="https://www.linkedin.com/mikeypawell"> <i class="fa fa-linkedin"></i> </a></li>
-                                      <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
-                                  </ul>
-
-                <p class="credits text-center">&copy; All Rights Reserved 2015</p>
-            </nav>
         </div>
+    </div>
 
-    </footer>
+
+
+
+</div>
+
+<footer>
+    <div class="container">
+        <nav class="nav-footer">
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#">Resume</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul>
+              <li><a href="https://twitter.com/mikey_pawell"> <i class="fa fa-twitter"></i> </a></li>
+              <li><a href="https://github.com/mikeypawell/"> <i class="fa fa-github"></i> </a> </li>  
+              <li><a href="https://www.linkedin.com/mikeypawell"> <i class="fa fa-linkedin"></i> </a></li>
+              <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+          </ul>
+      </nav>
+  </div>
+
+</footer>
 </body>
 </html>
